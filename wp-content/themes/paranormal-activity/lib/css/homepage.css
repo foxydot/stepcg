@@ -14,12 +14,6 @@
   font-family: FontAwesome;
 }
 /* Colors */
-.blue-bkg {
-  background: #0e2180;
-}
-.orange-bkg {
-  background: #fa8924;
-}
 /* Neutrals */
 /* Buttons */
 .button:hover,
@@ -47,8 +41,22 @@
   background-color: transparent;
   border: 1px solid #fa8924;
 }
+.blue-bkg {
+  background: #0e2180;
+}
+.orange-bkg {
+  background: #fa8924;
+}
+.white-bkg {
+  background: #ffffff;
+}
 .gradient {
   background: linear-gradient(to right, #5591f2 0%, #17308e 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+  color: #ffffff;
+}
+.wrap {
+  margin: 0 auto;
+  max-width: 960px;
 }
 /* Clears */
 .clearfix {
@@ -57,4 +65,19 @@
   height: 0;
   clear: both;
   visibility: hidden;
+}
+.home .site-inner main.content article .entry-content {
+  margin-top: 0;
+}
+.home .site-inner main.content article .entry-content .gradient {
+  padding: 40px 0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+  text-transform: none;
+  width: 100%;
+}
+.home .site-inner main.content article .entry-content .gradient img.pull-right {
+  margin-left: 60px;
 }

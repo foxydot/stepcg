@@ -79,7 +79,8 @@ if(!function_exists('msdlab_team_list')){
         while ( $loop->have_posts() ) : $loop->the_post();
             $ret .= '
             <li>
-                <div class="wrap row">
+                <div class="wrap">
+                <div class="row">
                     <div class="team-photo col-md-3">
                         <img src="'.get_field("bio_photo").'" alt="'.get_field("person").'"/>
                     </div>
@@ -99,9 +100,10 @@ if(!function_exists('msdlab_team_list')){
                         </p>
                         <div class="more-button">More ></div>
                     </div>
-                    </div>
-                </li>
-                ';
+                </div>
+            </div>
+        </li>
+        ';
             endwhile; 
         wp_reset_query();
             
@@ -109,7 +111,12 @@ if(!function_exists('msdlab_team_list')){
         return $ret;
     } 
 }
-    
-
-
 add_shortcode('team','msdlab_team_list');
+
+if(!function_exists('msdlab_gradient_block')){
+    function msdlab_gradient_block($atts,$content){         
+        $ret = '<div class="gradient"><div class="wrap">'.$content.'</div></div>';
+        return $ret;
+    } 
+}
+add_shortcode('gradient','msdlab_gradient_block');

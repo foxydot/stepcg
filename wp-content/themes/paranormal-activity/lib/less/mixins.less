@@ -48,9 +48,6 @@
 
 @dkpurple: rgb(46, 26, 71);
 
-.blue-bkg{background: @blue;}
-.orange-bkg{background: @orange;}
-
 /* Neutrals */
 @white: #FFF;
 @vltgrey: #CCC;
@@ -94,9 +91,18 @@
   .button-hover();
 }
 
+.blue-bkg{background: @blue;}
+.orange-bkg{background: @orange;}
+.white-bkg{background: @white;}
 .gradient {
     background: linear-gradient(to right, #5591f2 0%, #17308e 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: @white;
 }
+
+.wrap {
+  margin: 0 auto;
+  max-width: 960px;
+  }
 
 /* Clears */
 .clearfix {

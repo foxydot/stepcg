@@ -344,7 +344,6 @@ class Description_Walker extends Walker_Nav_Menu
  */
 function msdlab_do_social_footer(){
     global $msd_social;
-    
     if($msd_social){
         $address = '<span itemprop="name"><img src="'.get_stylesheet_directory_uri().'/lib/img/advia-footer-logo-white.png" alt="'.$msd_social->get_bizname().'" /></span><br />Corporate Office:<br /><span itemprop="streetAddress">'.get_option('msdsocial_street').'</span>, <span itemprop="streetAddress">'.get_option('msdsocial_street2').'</span><br /><span itemprop="addressLocality">'.get_option('msdsocial_city').'</span>, <span itemprop="addressRegion">'.get_option('msdsocial_state').'</span> <span itemprop="postalCode">'.get_option('msdsocial_zip').'</span><br />'.$msd_social->get_digits();
         $copyright .= '<span class="copyright">&copy; '.date('Y').' '.$msd_social->get_bizname().' | All Rights Reserved</span>';
