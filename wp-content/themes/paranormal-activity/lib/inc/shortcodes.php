@@ -114,8 +114,13 @@ if(!function_exists('msdlab_team_list')){
 add_shortcode('team','msdlab_team_list');
 
 if(!function_exists('msdlab_gradient_block')){
-    function msdlab_gradient_block($atts,$content){         
-        $ret = '<div class="gradient"><div class="wrap">'.$content.'</div></div>';
+    function msdlab_gradient_block($atts,$content){
+        extract( shortcode_atts( array(
+        'align' => FALSE,
+        ), $atts ) );
+        $class[] = $align?'align-'.$align:'';
+        $classes = implode(' ',$class);
+        $ret = '<div class="gradient"><div class="wrap '.$classes.'">'.$content.'</div></div>';
         return $ret;
     } 
 }
