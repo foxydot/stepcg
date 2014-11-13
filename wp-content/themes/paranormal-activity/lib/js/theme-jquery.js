@@ -8,6 +8,16 @@ jQuery(document).ready(function($) {
 	var numwidgets = $('#footer-widgets div.widget').length;
 	$('#footer-widgets').addClass('cols-'+numwidgets);	
 	
+	$('.entry-header').each(function(){
+       var title = $(this).find('.entry-title');
+       var subtitle = $(this).find('.entry-subtitle');
+       if(title.width() <= subtitle.width()){
+           title.css('border-bottom','0').css('padding-bottom','0').css('margin-bottom','0');
+       } else {
+           subtitle.css('border-top','0').css('padding-top','0').css('margin-top','0');
+       }
+	});
+	
 	//team
 	$('.team-info .more-button').click(function(){
 	    var btn = $(this);
