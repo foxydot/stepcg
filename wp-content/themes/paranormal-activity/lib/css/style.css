@@ -10769,6 +10769,9 @@ Site Footer
   font-weight: 600;
   padding: 10px 10px 10px 0;
 }
+.page .site-inner main.content .entry-content ul.our-team-list li:before {
+  content: '';
+}
 .page .site-inner main.content .entry-content ul.our-team-list li.first-child {
   padding-top: 0;
 }
