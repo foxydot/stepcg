@@ -125,3 +125,54 @@ if(!function_exists('msdlab_gradient_block')){
     } 
 }
 add_shortcode('gradient','msdlab_gradient_block');
+
+
+/**
+ * Do the three areas on the approach page
+ */
+ function msdlab_setup_fake_widgets(){
+     $ret = '
+    <section class="light-grey widgets">
+        <div class="wrap">
+            <h3 class="light-blue-color">
+                '.get_field("light_blue_headline").'
+            </h3>
+            <ul class="row">
+                <li class="col-md-4 col-sm-12">
+                    <div class="icon" id="icon-1"></div>
+                    <h4 class="orange-color">
+                        '.get_field("icon_01_title").'
+                    </h4>
+                    <div class="line blue-bkg"></div>
+                    <p class="purple-color">
+                        '.get_field("icon_01_paragraph").'
+                    </p>
+                </li>
+                <li class="col-md-4 col-sm-12">
+                    <div class="icon" id="icon-2"></div>
+                    <h4 class="orange-color">
+                        '.get_field("icon_02_title").'
+                    </h4>
+                    <div class="line blue-bkg"></div>
+                    <p class="purple-color">
+                        '.get_field("icon_02_paragraph").'
+                    </p>
+                </li>
+                <li class="col-md-4 col-sm-12">
+                    <div class="icon" id="icon-3"></div>
+                    <h4 class="orange-color">
+                        '.get_field("icon_03_title").'
+                    </h4>
+                    <div class="line blue-bkg"></div>
+                    <p class="purple-color">
+                        '.get_field("icon_03_paragraph").'
+                    </p>
+                </li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+    </section>';
+    return $ret;
+ }
+ 
+ add_shortcode('widgety','msdlab_setup_fake_widgets');

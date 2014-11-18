@@ -58,17 +58,107 @@
           width: 90%;
           .wrap;
         }
+        ul, h3, h4, h5, h6{
+          .wrap;
+        }
+        h4{
+          font-size: 20px;
+          font-size: 2rem;
+          font-weight: 400;
+          color: @orange;
+        }
+        ul{
+          font-size: 18px;
+          line-height: 36px;
+          list-style: outside none none;
+          li{
+            list-style: none outside none;
+            line-height: 26px;
+            margin-top: 14px;
+            padding-left: 18px;
+            text-indent: -18px;
+          }
+          li:before{
+              color: rgb(87, 149, 246);
+              content: ">";
+              display: inline;
+              font-weight: 800;
+              padding-right: 5px;
+          }
+        }
+        section.light-grey{
+          background-color: #F1F2F2;
+          margin-top: 52px;
+        }
+        .widgets{
+          .wrap{
+            padding-top: 36px;
+            h3 {
+              font-size: 18px;
+              font-weight: 600;
+              text-transform: uppercase;
+              color:rgb(87, 149, 246);
+            }
+            ul{
+              margin: 0 -15px;
+              li{
+                margin: 42px 0;
+                text-indent: 0;
+                .icon {
+                    background-position: left bottom;
+                    background-repeat: no-repeat;
+                    background-size: auto auto;
+                    height: 100px;
+                    width: 100%;
+                }
+                #icon-1{
+                  background-image: url(../img/icon-1.png);
+                }
+                #icon-2{
+                  background-image: url(../img/icon-2.png);
+                }
+                #icon-3{
+                  background-image: url(../img/icon-3.png);
+                }
+                h4 {
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin-bottom: 14px;
+                    margin-top: 26px;
+                    text-transform: uppercase;
+                    width: 100%;
+                }
+                .line {
+                    clear: both;
+                    height: 2px;
+                    margin: 14px 0;
+                    width: 82%;
+                }
+                p{
+                  font-size: 17px;
+                  font-weight: 300;
+                  width: 100%;
+                }
+              }
+              li:before{
+                content: '';
+              }
+            }
+          }
+        }
         ul.our-team-list {
             float: left;
             list-style: outside none none;
             margin-top: 60px;
             margin-left: 0;
+            max-width: 100%;
             li{
               box-sizing: border-box;
               display: block;
               float: left;
               height: auto;
               padding: 34px 0;
+              text-indent: 0;
               width: 100%;
               .team-photo {
                   z-index: 10;

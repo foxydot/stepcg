@@ -9138,6 +9138,9 @@ body {
   background-color: transparent;
   border: 1px solid #fa8924;
 }
+.light-blue-color {
+  color: #5795f6;
+}
 .blue-bkg {
   background: #0e2180;
 }
@@ -10608,11 +10611,103 @@ Site Footer
   margin: 0 auto;
   max-width: 960px;
 }
+.page .site-inner main.content .entry-content ul,
+.page .site-inner main.content .entry-content h3,
+.page .site-inner main.content .entry-content h4,
+.page .site-inner main.content .entry-content h5,
+.page .site-inner main.content .entry-content h6 {
+  margin: 0 auto;
+  max-width: 960px;
+}
+.page .site-inner main.content .entry-content h4 {
+  font-size: 20px;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fa8924;
+}
+.page .site-inner main.content .entry-content ul {
+  font-size: 18px;
+  line-height: 36px;
+  list-style: outside none none;
+}
+.page .site-inner main.content .entry-content ul li {
+  list-style: none outside none;
+  line-height: 26px;
+  margin-top: 14px;
+  padding-left: 18px;
+  text-indent: -18px;
+}
+.page .site-inner main.content .entry-content ul li:before {
+  color: #5795f6;
+  content: ">";
+  display: inline;
+  font-weight: 800;
+  padding-right: 5px;
+}
+.page .site-inner main.content .entry-content section.light-grey {
+  background-color: #F1F2F2;
+  margin-top: 52px;
+}
+.page .site-inner main.content .entry-content .widgets .wrap {
+  padding-top: 36px;
+}
+.page .site-inner main.content .entry-content .widgets .wrap h3 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #5795f6;
+}
+.page .site-inner main.content .entry-content .widgets .wrap ul {
+  margin: 0 -15px;
+}
+.page .site-inner main.content .entry-content .widgets .wrap ul li {
+  margin: 42px 0;
+  text-indent: 0;
+}
+.page .site-inner main.content .entry-content .widgets .wrap ul li .icon {
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  height: 100px;
+  width: 100%;
+}
+.page .site-inner main.content .entry-content .widgets .wrap ul li #icon-1 {
+  background-image: url(../img/icon-1.png);
+}
+.page .site-inner main.content .entry-content .widgets .wrap ul li #icon-2 {
+  background-image: url(../img/icon-2.png);
+}
+.page .site-inner main.content .entry-content .widgets .wrap ul li #icon-3 {
+  background-image: url(../img/icon-3.png);
+}
+.page .site-inner main.content .entry-content .widgets .wrap ul li h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  margin-top: 26px;
+  text-transform: uppercase;
+  width: 100%;
+}
+.page .site-inner main.content .entry-content .widgets .wrap ul li .line {
+  clear: both;
+  height: 2px;
+  margin: 14px 0;
+  width: 82%;
+}
+.page .site-inner main.content .entry-content .widgets .wrap ul li p {
+  font-size: 17px;
+  font-weight: 300;
+  width: 100%;
+}
+.page .site-inner main.content .entry-content .widgets .wrap ul li:before {
+  content: '';
+}
 .page .site-inner main.content .entry-content ul.our-team-list {
   float: left;
   list-style: outside none none;
   margin-top: 60px;
   margin-left: 0;
+  max-width: 100%;
 }
 .page .site-inner main.content .entry-content ul.our-team-list li {
   box-sizing: border-box;
@@ -10620,6 +10715,7 @@ Site Footer
   float: left;
   height: auto;
   padding: 34px 0;
+  text-indent: 0;
   width: 100%;
 }
 .page .site-inner main.content .entry-content ul.our-team-list li .team-photo {

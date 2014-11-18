@@ -37,3 +37,4 @@ if(!function_exists('requireDir')){
     }
 }
 requireDir(get_stylesheet_directory() . '/lib/inc');
+require_once(get_stylesheet_directory() . '/lib/orig_slider/orig_slider.php');
