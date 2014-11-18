@@ -37,15 +37,15 @@ function msdlab_add_orig_slider(){
             <!--  item 1 -->
                     <div class="item">
                         <h4>
-                            <?php the_field("slider_01_title");?>
+                            '.get_field("slider_01_title").'
                         </h4>
                         
                         <div class="white-h5-container">
                             <h5>
-                                <?php the_field("slider_01_subtitle_a");?>
+                                '.get_field("slider_01_subtitle_a").'
                             </h5>
                             <h6>
-                                <?php the_field("slider_01_subtitle_b");?>
+                                '.get_field("slider_01_subtitle_b").'
                             </h6>
                         </div>
                         <div class="gif"></div>
@@ -58,15 +58,15 @@ function msdlab_add_orig_slider(){
                     <!--  item 2 -->
                     <div class="item">
                         <h4 class="blue-color">
-                            <?php the_field("slider_02_title");?>
+                            '.get_field("slider_02_title").'
                         </h4>
                         
                         <div class="white-h5-container">
                             <h5>
-                                <?php the_field("slider_02_subtitle_a");?>
+                                '.get_field("slider_02_subtitle_a").'
                             </h5>
                             <h6>
-                                <?php the_field("slider_02_subtitle_b");?>
+                                '.get_field("slider_02_subtitle_b").'
                             </h6>
                         </div>
                         
@@ -80,16 +80,16 @@ function msdlab_add_orig_slider(){
                     <!--  item 3 -->
                     <div class="item">
                         <h4 class="pink-color">
-                            <?php the_field("slider_03_title");?>
+                            '.get_field("slider_03_title").'
                         </h4>
                         
                         
                         <div class="white-h5-container">
                             <h5>
-                                <?php the_field("slider_03_subtitle_a");?>
+                                '.get_field("slider_03_subtitle_a").'
                             </h5>
                             <h6>
-                                <?php the_field("slider_03_subtitle_b");?>
+                                '.get_field("slider_03_subtitle_b").'
                             </h6>
                         </div>
                         
@@ -118,17 +118,17 @@ function msdlab_add_orig_slider(){
                     <div class="item-text-container">
                         <div class="item-text center-text">
                             <p>                 
-                                <?php the_field("slider_01_caption");?>
+                                '.get_field("slider_01_caption").'
                             </p>
                         </div>
                         <div class="item-text center-text">
                             <p>                 
-                                <?php the_field("slider_02_caption");?>
+                                '.get_field("slider_02_caption").'
                             </p>
                         </div>
                         <div class="item-text center-text">
                             <p>                 
-                                <?php the_field("slider_03_caption");?>
+                                '.get_field("slider_03_caption").'
                             </p>
                         </div>
                     </div>
@@ -140,7 +140,161 @@ function msdlab_add_orig_slider(){
     </section>
 <!-- SLIDER END --> ';
     } else {
+        $ret = '<section>
+    
+        <div class="lines-box">
+            <div class="page-width-container">
+                <p class="purple-heading">
+                    '.get_field("method_title").'
+                </p>
+                
+                
+                
+                <div class="left-arrow-blue">
+                
+                </div>
+                
+                <div class="swirl-container">
+                    <div class="pagination">
+                        <div class="circle circle-1"></div>
+                        <div class="circle circle-2"></div>
+                        <div class="circle circle-3"></div>
+                        <div class="circle circle-4"></div>
+                        <div class="pag-line"></div>
+                    </div>
+                    <div class="left-title">
+                            Goal<br/>
+                            <span class="bold">Set</span>
+                        </div>
+                    <div class="woman" id="woman-1"></div>
+                    <div class="woman" id="woman-2"></div>
+                    <div class="right-title">
+                            Goal<br/>
+                            <span class="bold">Achieved</span>
+                        </div>
+            <div class="item-container">
+            <!--  item 1 -->
+                    <div class="item">
+
+                    
+                        <!--<div class="woman" id="woman-1"></div>-->
+                        
+                        <div class="blue-arrow-container">
+                            <div class="blue-arrow" id="blue-arrow-1">
+                                    '.get_field("method_01_arrow_a").'
+                            </div>
+                            <div class="blue-arrow" id="blue-arrow-2">
+                                    '.get_field("method_01_arrow_b").'
+                            </div>
+                            <div class="blue-arrow" id="blue-arrow-3">
+                                '.get_field("method_01_arrow_c").'
+                            </div>          
+                        </div>
+                    
+                        <!--<div class="woman" id="woman-2"></div>-->
+
+                        
+                        <div class="swirl-1"></div>
+                    
+                    </div>
+                    <!-- end above this line ^ -->
+                    <!--  item 2 -->
+                    <div class="item">
+                        
+                        <div class="blue-arrow-container">
+                            <div class="blue-arrow" id="blue-arrow-4">
+                                '.get_field("method_02_arrow").'
+                            </div>          
+                        </div>
+                        
+                        <div class="swirl-2"></div>
+                        
+                    </div>
+                    <!-- end above this line ^ -->
+                    <!--  item 3 -->
+                    <div class="item">
+                            
+                        <div class="blue-arrow-container">
+                            <div class="blue-arrow" id="blue-arrow-5">
+                                '.get_field("method_03_arrow").'
+                            </div>          
+                        </div>
+                        
+                        <div class="swirl-1"></div>
+                    
+                    </div>
+                    <!-- end above this line ^ -->
+                    <!--  item 4 -->
+                    <div class="item">
+                    <div id="woman-3">
+                        </div>
+                        
+                        <!--<div class="last-circle">
+                        </div>-->
+                        <div class="blue-arrow-container">
+                            <div class="blue-arrow" id="blue-arrow-6">
+                                '.get_field("method_04_arrow").'
+                            </div>          
+                        </div>
+                        
+                        
+                        <div class="end-swirl"></div>
+                        
+                        
+                                            
+                    </div>
+                    <!-- end above this line ^ -->
+                    </div>
+                    
+                    
+                    
+                </div>
+                <div class="right-arrow-blue">
+                    
+                    </div>
+
+
+                
+            </div>
+            <div class="blue-box">
+                <div class="page-width-container">
+                    <div class="item-text-container">
+                    <!-- 
+                    
+                    "To remain competitive, organizational leadership must break down functional silos with new methodologies that enable the success of <span class=\'semi-bold italic\'>cross-functional, customer-centric strategies</span>.";
+            var $itemText2 = "<span class=\'semi-bold italic\'>Data</span> changes what consumers expect, and therefore what business must deliver. <span class=\'semi-bold italic\'>Intelligent designs</span> proactively respond to consumer, associate, and management needs in near real-time.";
+            var $itemText3 = "A closed-loop ecosystem emerges as strategies mature, providing the learning models necessary to translate insights into profits and unlock new market opportunities.";
+            var $itemText4 = "Once we have the <span class=\'semi-bold italic\'>Consumer Value Chain unlocked</span>, we scale to provide new revenue streams and market value across your enterprise.";
         
+                    
+                    
+                     -->
+                        <div class="item-text">
+                            <p>                 
+                                '.get_field("method_01_caption").'
+                            </p>
+                        </div>
+                        <div class="item-text">
+                            <p>                 
+                                '.get_field("method_02_caption").'
+                            </p>
+                        </div>
+                        <div class="item-text">
+                            <p>                 
+                                '.get_field("method_03_caption").'
+                            </p>
+                        </div>
+                        <div class="item-text">
+                            <p>                 
+                                '.get_field("method_04_caption").'
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>';
     }
     return $ret;
 }
