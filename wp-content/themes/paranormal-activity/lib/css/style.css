@@ -10254,7 +10254,7 @@ article.entry {
   display: inline;
 }
 .archive-pagination li a {
-  background-color: #333;
+  background-color: #0e2180;
   border-radius: 3px;
   color: #fff;
   cursor: pointer;
@@ -10264,7 +10264,7 @@ article.entry {
 }
 .archive-pagination li a:hover,
 .archive-pagination li.active a {
-  background-color: #f15123;
+  background-color: #fa8924;
 }
 .entry-pagination a {
   border-bottom: 1px solid #ddd;
@@ -10847,6 +10847,81 @@ Site Footer
   color: #ffffff;
   background-color: transparent;
   border: 1px solid #ffffff;
+}
+.blog article,
+.single-post article {
+  margin-bottom: 0;
+  padding-bottom: 36px;
+}
+.blog article .entry-header,
+.single-post article .entry-header,
+.blog article .entry-content,
+.single-post article .entry-content,
+.blog article .entry-footer,
+.single-post article .entry-footer {
+  margin: 0 auto;
+  max-width: 960px;
+  float: none;
+}
+.blog article .entry-title,
+.single-post article .entry-title {
+  float: none;
+  display: inline-block;
+}
+.blog article .entry-content h3,
+.single-post article .entry-content h3 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #5795f6;
+}
+.blog article .entry-content h4,
+.single-post article .entry-content h4 {
+  font-size: 20px;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fa8924;
+}
+.blog article .entry-content ul,
+.single-post article .entry-content ul {
+  font-size: 18px;
+  line-height: 36px;
+  list-style: outside none none;
+}
+.blog article .entry-content ul li,
+.single-post article .entry-content ul li {
+  list-style: none outside none;
+  line-height: 26px;
+  margin-top: 14px;
+  padding-left: 18px;
+  text-indent: -18px;
+}
+.blog article .entry-content ul li:before,
+.single-post article .entry-content ul li:before {
+  color: #5795f6;
+  content: ">";
+  display: inline;
+  font-weight: 800;
+  padding-right: 5px;
+}
+.blog article.even,
+.single-post article.even {
+  background: none repeat scroll 0 0 #f2f2f2;
+}
+.blog .comment-respond,
+.single-post .comment-respond {
+  margin: 0 auto;
+  max-width: 960px;
+  float: none;
+}
+.blog .comment-respond code,
+.single-post .comment-respond code {
+  white-space: normal;
+}
+.blog .pagination,
+.single-post .pagination {
+  display: table;
+  margin: 4rem auto;
 }
 .site-footer #footer-info img {
   height: 50px;

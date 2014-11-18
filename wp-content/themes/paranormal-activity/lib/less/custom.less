@@ -247,6 +247,71 @@
     }
   }
 }
+.blog,.single-post{
+  article{
+    margin-bottom: 0;
+    padding-bottom: 36px;
+    .entry-header, .entry-content, .entry-footer{
+      .wrap;
+      float: none;
+    }
+    .entry-title{
+      float: none;
+      display: inline-block;
+    }
+    .entry-content{
+      
+    h3{
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color:rgb(87, 149, 246);
+    }
+        h4{
+          font-size: 20px;
+          font-size: 2rem;
+          font-weight: 400;
+          color: @orange;
+        }
+        ul{
+          font-size: 18px;
+          line-height: 36px;
+          list-style: outside none none;
+          li{
+            list-style: none outside none;
+            line-height: 26px;
+            margin-top: 14px;
+            padding-left: 18px;
+            text-indent: -18px;
+          }
+          li:before{
+              color: rgb(87, 149, 246);
+              content: ">";
+              display: inline;
+              font-weight: 800;
+              padding-right: 5px;
+          }
+        }
+    }
+  }
+  article.odd{
+    
+  }
+  article.even{
+     background: none repeat scroll 0 0 rgb(242, 242, 242);
+  }
+  .comment-respond{
+    .wrap;
+    float: none;
+    code{
+      white-space: normal;
+    }
+  }
+  .pagination{
+    display: table;
+    margin: 4rem auto;
+  }
+}
 .site-footer{
   #footer-info{
     img{
