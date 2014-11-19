@@ -38,6 +38,24 @@ wp-content/plugins/*
 !wp-content/plugins/msd*
 # !wp-content/plugins/my-directory-plugin/
 
+
+!assets/plugins/LayerSlider/
+!wp-content/plugins/LayerSlider/
+assets/plugins/LayerSlider/*
+wp-content/plugins/LayerSlider/*
+!assets/plugins/LayerSlider/static/
+!wp-content/plugins/LayerSlider/static/
+assets/plugins/LayerSlider/static/*
+wp-content/plugins/LayerSlider/static/*
+!assets/plugins/LayerSlider/static/skins
+!wp-content/plugins/LayerSlider/static/skins
+assets/plugins/LayerSlider/static/skins/*
+wp-content/plugins/LayerSlider/static/skins/*
+!assets/plugins/LayerSlider/static/skins/msd*
+!wp-content/plugins/LayerSlider/static/skins/msd*
+!assets/plugins/LayerSlider/static/skins/paranormal*
+!wp-content/plugins/LayerSlider/static/skins/paranormal*
+
 # Ignore everything in the "themes" directory, except the themes you
 # specify (see the commented-out example for a hint on how to do this.)
 assets/themes/twenty*
