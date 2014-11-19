@@ -9840,13 +9840,13 @@ Site Header
   font-weight: 300;
   line-height: 1;
   margin-bottom: 0;
+  display: none;
 }
 /* Full width header, no widgets */
 .header-full-width .title-area,
 .header-full-width .site-title {
   /*width: 100%;*/
 }
-.header-image .site-description,
 .header-image .site-title a {
   display: block;
   text-indent: -9999px;
@@ -10952,7 +10952,15 @@ Site Footer
 /* Smaller screens */
 @media only screen and (max-width: 1023px) {
   /* Enter Your Custom Styles Here */
-  div.wrap {
+}
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  /* Enter Your Custom Styles Here */
+  .mobile-only {
+    display: block;
+  }
+  .wrap,
+  .site-inner {
     padding: 0 15px;
   }
   .header-image .site-header {
@@ -10966,19 +10974,16 @@ Site Footer
   }
   .header-image .site-header .title-area .site-title a {
     width: 100%;
-    margin: 1rem auto;
-    float: none;
-  }
-  .header-image .site-header .nav-primary {
+    background-size: auto;
+    background-position: center center;
     margin: 0 auto;
     float: none;
   }
-}
-/* Mobile */
-@media only screen and (max-width: 767px) {
-  /* Enter Your Custom Styles Here */
-  .mobile-only {
-    display: block;
+  .header-image .site-inner {
+    padding-top: 9.8rem;
+  }
+  .header-widget-area {
+    display: none;
   }
   .nav-primary {
     float: none;
@@ -11088,22 +11093,6 @@ Site Footer
 }
 @media only screen and (max-width: 479px) {
   /* Enter Your Custom Styles Here */
-  .pre-header .wrap .header-widget-area .widget {
-    display: block;
-    width: 100%;
-    text-align: center;
-    margin-top: 1rem;
-  }
-  .pre-header .wrap .header-widget-area .widget .button span {
-    display: block;
-  }
-  .pre-header .wrap .header-widget-area .msd-connected {
-    margin-top: -1.5rem;
-  }
-  .tablepress td,
-  .tablepress th {
-    display: inline-block;
-  }
 }
 @media only screen and (max-width: 319px) {
   /* Enter Your Custom Styles Here */

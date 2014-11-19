@@ -120,7 +120,7 @@ if(!function_exists('msdlab_gradient_block')){
         ), $atts ) );
         $class[] = $align?'align-'.$align:'';
         $classes = implode(' ',$class);
-        $ret = '<div class="gradient"><div class="wrap '.$classes.'">'.$content.'</div></div>';
+        $ret = '<section class="gradient"><div class="wrap '.$classes.'">'.$content.'</div></section>';
         return $ret;
     } 
 }

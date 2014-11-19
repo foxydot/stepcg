@@ -22,9 +22,17 @@
 
 @media only screen and (max-width: 1023px) {
   /* Enter Your Custom Styles Here */ 
-  div.wrap {
-    padding: 0 15px;
-  }
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 767px) {
+  /* Enter Your Custom Styles Here */ 
+  
+  .mobile-only {display: block;}
+.wrap, .site-inner{
+  padding: 0 15px;
+}
   .header-image{
     .site-header{
       margin: 0 auto;
@@ -36,25 +44,20 @@
         .site-title{
           a{
             width: 100%;
-            margin: 1rem auto;
+            background-size: auto;
+            background-position: center center;
+            margin:  0 auto;
             float: none;
           }
         }
       }
-      .nav-primary{
-        margin: 0 auto;
-        float: none;
-      }
+     }
+     .site-inner{
+       padding-top: 9.8rem;
      }
   }
-}
 
-/* Mobile */
-
-@media only screen and (max-width: 767px) {
-  /* Enter Your Custom Styles Here */ 
-  
-  .mobile-only {display: block;}
+.header-widget-area{display: none;}
   .nav-primary  {
     float: none;
     display: block;
@@ -171,27 +174,6 @@
 
 @media only screen and (max-width : 479px) {  
   /* Enter Your Custom Styles Here */ 
-  .pre-header{
-    .wrap{
-      .header-widget-area{
-        .widget{
-          display: block;
-          width: 100%;
-          text-align: center;
-          margin-top: 1rem;
-          .button{
-            span{
-              display: block;
-            }
-          }
-        }
-        .msd-connected{
-          margin-top: -1.5rem;
-        }
-      }
-    }
-  }
-  .tablepress td, .tablepress th {display: inline-block;}
 } 
 
 @media only screen and (max-width : 319px) {  

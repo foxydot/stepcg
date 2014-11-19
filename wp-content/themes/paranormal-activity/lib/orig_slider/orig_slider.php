@@ -2,12 +2,12 @@
 function msdlab_add_js_for_orig_sliders(){
     if(!is_admin()){
        wp_enqueue_style('orig_slider',get_stylesheet_directory_uri().'/lib/orig_slider/css/orig-slider.css');
-       wp_enqueue_script('orig_slider-superscrollorama',get_stylesheet_directory_uri().'/lib/orig_slider/js/jquery.superscrollorama.js',array('jquery'));
-       wp_enqueue_script('orig_slider-tweenmax',get_stylesheet_directory_uri().'/lib/orig_slider/js/greensock/TweenMax.min.js',array('jquery'));
-       wp_enqueue_script('orig_slider-tweenlite',get_stylesheet_directory_uri().'/lib/orig_slider/js/greensock/TweenLite.min.js',array('jquery'));
-       wp_enqueue_script('orig_slider-timelinemax',get_stylesheet_directory_uri().'/lib/orig_slider/js/greensock/TimelineMax.min.js',array('jquery'));
+       wp_enqueue_script('orig_slider-superscrollorama',get_stylesheet_directory_uri().'/lib/orig_slider/js/jquery.superscrollorama.js',array('jquery'),NULL,TRUE);
+       wp_enqueue_script('orig_slider-tweenmax',get_stylesheet_directory_uri().'/lib/orig_slider/js/greensock/TweenMax.min.js',array('jquery'),NULL,TRUE);
+       wp_enqueue_script('orig_slider-tweenlite',get_stylesheet_directory_uri().'/lib/orig_slider/js/greensock/TweenLite.min.js',array('jquery'),NULL,TRUE);
+       wp_enqueue_script('orig_slider-timelinemax',get_stylesheet_directory_uri().'/lib/orig_slider/js/greensock/TimelineMax.min.js',array('jquery'),NULL,TRUE);
         if(is_front_page()){
-            wp_enqueue_script('orig_slider-homepage-jquery',get_stylesheet_directory_uri().'/lib/orig_slider/js/slider-home.js',array('jquery'));
+            wp_enqueue_script('orig_slider-homepage-jquery',get_stylesheet_directory_uri().'/lib/orig_slider/js/slider-home.js',array('jquery'),NULL,TRUE);
         } else {
             
         }
@@ -20,7 +20,7 @@ function msdlab_add_orig_slider(){
     if(is_front_page()){
         $ret = '
    <!-- SLIDER START -->   
-    <section>
+    <section class="slider">
     
         <div class="lines-box white-bkg lines-box-home">
             <div class="page-width-container">
@@ -140,7 +140,7 @@ function msdlab_add_orig_slider(){
     </section>
 <!-- SLIDER END --> ';
     } else {
-        $ret = '<section>
+        $ret = '<section class="slider">
     
         <div class="lines-box">
             <div class="page-width-container">
