@@ -176,3 +176,13 @@ add_shortcode('gradient','msdlab_gradient_block');
  }
  
  add_shortcode('widgety','msdlab_setup_fake_widgets');
+ 
+ function msdlab_orange_gradient_line(){
+     $ret = '<div class="wrap gradient-holder hidden-sm hidden-xs">';
+     $ret .= '<div class="orange-line-fixed orange-gradient"></div>';
+     $ret .= '<div class="orange-line-fixed orange-gradient"></div>';
+     $ret .= '</div>';
+     return $ret;
+ }
+add_shortcode('orange_gradient_line','msdlab_orange_gradient_line');
+add_shortcode('orange-gradient-line','msdlab_orange_gradient_line');

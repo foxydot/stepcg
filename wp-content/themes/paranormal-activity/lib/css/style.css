@@ -9797,7 +9797,7 @@ Site Header
 .site-header {
   background-color: #fff;
   position: fixed;
-  z-index: 1000;
+  z-index: 90000;
   height: 52px;
   height: 5.2rem;
   width: 100%;
