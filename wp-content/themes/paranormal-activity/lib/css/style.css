@@ -11104,6 +11104,15 @@ Site Footer
     right: 15px;
     top: 10px;
   }
+  .our-approach .ls-wp-fullwidth-container:after {
+    background: transparent;
+    height: 0;
+    width: 100%;
+    display: none;
+    top: 0;
+    position: relative;
+    content: ' ';
+  }
 }
 @media only screen and (max-width: 479px) {
   /* Enter Your Custom Styles Here */

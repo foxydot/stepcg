@@ -137,7 +137,7 @@ add_shortcode('gradient','msdlab_gradient_block');
             <h3 class="light-blue-color">
                 '.get_field("light_blue_headline").'
             </h3>
-            <ul class="row">
+            <ul>
                 <li class="col-md-4 col-sm-12">
                     <div class="icon" id="icon-1"></div>
                     <h4 class="orange-color">
