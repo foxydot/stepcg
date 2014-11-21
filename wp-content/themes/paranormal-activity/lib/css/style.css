@@ -10924,6 +10924,16 @@ Site Footer
   font-weight: 800;
   padding-right: 5px;
 }
+.blog article .entry-content ol,
+.single-post article .entry-content ol,
+.blog article .entry-content p,
+.single-post article .entry-content p,
+.blog article .entry-content ul,
+.single-post article .entry-content ul,
+.blog article .entry-content .quote-caption,
+.single-post article .entry-content .quote-caption {
+  margin-bottom: 1.6rem;
+}
 .blog article.even,
 .single-post article.even {
   background: none repeat scroll 0 0 #f2f2f2;
