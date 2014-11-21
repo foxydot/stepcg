@@ -35,7 +35,7 @@ add_filter('genesis_breadcrumb_args', 'msdlab_breadcrumb_args'); //customize the
 remove_action('genesis_before_loop', 'genesis_do_breadcrumbs'); //move the breadcrumbs 
 add_filter( 'genesis_post_info', 'sp_post_info_filter' );
 add_action('genesis_before_content_sidebar_wrap', 'genesis_do_breadcrumbs'); //to outside of the loop area
-add_action('genesis_before_entry','msd_post_image');//add the image above the entry
+add_action('genesis_entry_content','msd_post_image',9);//add the image above the entry
 
 add_filter('excerpt_more', 'sp_read_more_link');
 add_filter( 'the_content_more_link', 'sp_read_more_link' );

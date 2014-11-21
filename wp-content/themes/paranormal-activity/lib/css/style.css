@@ -10877,6 +10877,12 @@ Site Footer
   max-width: 960px;
   float: none;
 }
+.blog article .header-image,
+.single-post article .header-image {
+  float: left;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
 .blog article .entry-title,
 .single-post article .entry-title {
   float: none;
