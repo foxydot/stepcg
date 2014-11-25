@@ -19,6 +19,7 @@ jQuery(document).ready(function($) {
 	});
 	
 	//team
+	$('.team-info .team-line').delay(2000).animate({width: 295,},1500);
 	$('.team-info .more-button').click(function(){
 	    var btn = $(this);
 	    var more = btn.prev('p');

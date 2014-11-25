@@ -10705,7 +10705,7 @@ Site Footer
 .page .site-inner main.content .entry-content ul.our-team-list {
   float: left;
   list-style: outside none none;
-  margin-top: 60px;
+  margin-top: 40px;
   margin-left: 0;
   max-width: 100%;
 }
@@ -10749,7 +10749,7 @@ Site Footer
   left: -50px;
   margin: 8px 0;
   position: relative;
-  width: 295px;
+  width: 0;
   z-index: 1;
 }
 .page .site-inner main.content .entry-content ul.our-team-list li .team-info p {
@@ -10823,6 +10823,12 @@ Site Footer
 .page .site-inner main.content .entry-content .gform_wrapper form ul.gform_fields {
   margin: 0 -15px !important;
 }
+.page .site-inner main.content .entry-content .gform_wrapper form ul.gform_fields li {
+  margin: 0;
+}
+.page .site-inner main.content .entry-content .gform_wrapper form ul.gform_fields li:before {
+  display: none;
+}
 .page .site-inner main.content .entry-content .gform_wrapper form .gform_button:hover {
   background-color: #ffffff;
   border-radius: 3px;
@@ -10847,6 +10853,33 @@ Site Footer
   color: #ffffff;
   background-color: transparent;
   border: 1px solid #ffffff;
+}
+.page .site-inner main.content .entry-content .gform_wrapper form:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.page .site-inner main.content .entry-content .gform_wrapper form:after:before,
+.page .site-inner main.content .entry-content .gform_wrapper form:after:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.page .site-inner main.content .entry-content .gform_wrapper form:after:after {
+  clear: both;
+}
+.page .site-inner main.content .entry-content .gform_wrapper form:after:before,
+.page .site-inner main.content .entry-content .gform_wrapper form:after:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.page .site-inner main.content .entry-content .gform_wrapper form:after:after {
+  clear: both;
 }
 .our-approach .ls-wp-fullwidth-container {
   margin: 45px 0;

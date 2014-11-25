@@ -149,7 +149,7 @@
         ul.our-team-list {
             float: left;
             list-style: outside none none;
-            margin-top: 60px;
+            margin-top: 40px;
             margin-left: 0;
             max-width: 100%;
             li{
@@ -192,7 +192,7 @@
                       left: -50px;
                       margin: 8px 0;
                       position: relative;
-                      width: 295px;
+                      width: 0;
                       z-index: 1;
                   }
                   p {
@@ -237,10 +237,19 @@
              padding: 35px 0;
              ul.gform_fields{
                margin: 0 -15px !important;
+               li{
+                 margin: 0;
+               }
+               li:before{
+                 display: none;
+               }
              }
              .gform_button:hover{
                .button-hover(@white);
              }
+          }
+          form:after{
+            .clearfix;
           }
         }
       }
