@@ -40,7 +40,9 @@ function msdlab_add_scripts() {
             wp_enqueue_script('bootstrap-jquery','//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js',array('jquery'));
         //use local
             //wp_enqueue_script('bootstrap-jquery',get_stylesheet_directory_uri().'/lib/bootstrap/js/bootstrap.min.js',array('jquery'));
-        wp_enqueue_script('msd-jquery',get_stylesheet_directory_uri().'/lib/js/theme-jquery.js',array('jquery','bootstrap-jquery'));
+        wp_enqueue_script('tween-max',get_stylesheet_directory_uri().'/lib/js/greensock/TweenMax.min.js');
+        wp_enqueue_script('scrollorama',get_stylesheet_directory_uri().'/lib/js/jquery.superscrollorama.js',array('tween-max'));
+        wp_enqueue_script('msd-jquery',get_stylesheet_directory_uri().'/lib/js/theme-jquery.js',array('jquery','bootstrap-jquery','tween-max'));
         wp_enqueue_script('nav-scripts',get_stylesheet_directory_uri().'/lib/js/nav-scripts.js',array('jquery','bootstrap-jquery'));
         wp_enqueue_script('equalHeights',get_stylesheet_directory_uri().'/lib/js/jquery.equal-height-columns.js',array('jquery'));
         if($is_IE){

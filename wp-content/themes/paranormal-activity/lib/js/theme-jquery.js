@@ -17,7 +17,15 @@ jQuery(document).ready(function($) {
            subtitle.css('border-top','0').css('padding-top','0').css('margin-top','0');
        }
 	});
-	
+	//approach
+    var controller = $.superscrollorama();
+    var scrollDuration = 200; 
+    function do_icons(){
+    controller.addTween('#icon-1', TweenMax.from( $('#icon-1'), .5, {css:{opacity: .0, top: 50}}), 75, 00);
+    controller.addTween('#icon-2', TweenMax.from( $('#icon-2'), .5, {css:{opacity: .0, top: 50}}), 75, 100);
+    controller.addTween('#icon-3', TweenMax.from( $('#icon-3'), .5, {css:{opacity: .0, top: 50}}), 75, 200);
+    }
+    do_icons();     
 	//team
 	$('.team-info .team-line').delay(2000).animate({width: 295,},1500);
 	$('.team-info .more-button').click(function(){
@@ -39,3 +47,17 @@ jQuery(document).ready(function($) {
     $('.gform_wrapper .gform_footer').addClass('col-md-8 col-md-offset-4 col-sm-12');
     
 });
+/*jQuery(window).scroll(function() {
+    if (jQuery(this).scrollTop() > 880) {
+        // apply effects and animations
+        jQuery('.our-approach .widgets #icon-1').animate({opacity:1, top:-20,},2000);
+    }    
+    if (jQuery(this).scrollTop() > 920 && jQuery('.our-approach .widgets #icon-1').css('opacity')>0.5) {
+        // apply effects and animations
+        jQuery('.our-approach .widgets #icon-2').animate({opacity:1, top:-20,},2000);
+    }
+    if (jQuery(this).scrollTop() > 960 && jQuery('.our-approach .widgets #icon-2').css('opacity')>0.5) {
+        // apply effects and animations
+        jQuery('.our-approach .widgets #icon-3').animate({opacity:1, top:-20,},2000);
+    }
+});*/

@@ -10670,6 +10670,8 @@ Site Footer
   background-size: auto auto;
   height: 100px;
   width: 100%;
+  position: relative;
+  opacity: 1;
 }
 .page .site-inner main.content .entry-content .widgets .wrap ul li #icon-1 {
   background-image: url(../img/icon-1.png);
