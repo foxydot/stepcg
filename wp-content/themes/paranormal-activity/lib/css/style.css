@@ -10721,9 +10721,6 @@ Site Footer
 .page .site-inner main.content .entry-content ul.our-team-list li .team-photo {
   z-index: 10;
 }
-.page .site-inner main.content .entry-content ul.our-team-list li .team-photo img {
-  max-height: 250px;
-}
 .page .site-inner main.content .entry-content ul.our-team-list li .team-info h2 {
   color: #fa8924;
   display: block;
