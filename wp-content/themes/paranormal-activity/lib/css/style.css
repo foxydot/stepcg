@@ -10909,16 +10909,32 @@ Site Footer
   max-width: 960px;
   float: none;
 }
-.blog article .header-image,
-.single-post article .header-image {
+.blog article .entry-header,
+.single-post article .entry-header {
+  padding-top: 4rem;
+}
+.blog article .entry-header .header-image,
+.single-post article .entry-header .header-image {
   float: left;
-  margin-right: 2rem;
+  margin-right: 1rem;
   margin-bottom: 1rem;
 }
-.blog article .entry-title,
-.single-post article .entry-title {
-  float: none;
+.blog article .entry-header .entry-title,
+.single-post article .entry-header .entry-title {
+  float: left;
   display: inline-block;
+  width: 68%;
+  clear: none;
+  margin-top: 0;
+  margin-left: -1rem;
+  padding: 0 1rem;
+}
+.blog article .entry-header .entry-meta,
+.single-post article .entry-header .entry-meta {
+  padding: 0 1rem;
+  margin-left: -1rem;
+  float: left;
+  width: 68%;
 }
 .blog article .entry-content h3,
 .single-post article .entry-content h3 {
@@ -10982,8 +10998,138 @@ Site Footer
 }
 .blog .pagination,
 .single-post .pagination {
+  margin: 0 auto;
+  max-width: 960px;
+  width: 100%;
   display: table;
   margin: 4rem auto;
+}
+.blog .pagination .pagination-previous,
+.single-post .pagination .pagination-previous,
+.blog .pagination .pagination-next,
+.single-post .pagination .pagination-next {
+  color: #5795f6;
+  font-weight: 700;
+}
+.blog .pagination .pagination-previous a,
+.single-post .pagination .pagination-previous a,
+.blog .pagination .pagination-next a,
+.single-post .pagination .pagination-next a {
+  color: #5795f6;
+}
+.blog .pagination .pagination-previous,
+.single-post .pagination .pagination-previous {
+  float: left;
+}
+.blog .pagination .pagination-next,
+.single-post .pagination .pagination-next {
+  float: right;
+}
+.recent {
+  margin: 0 auto;
+  max-width: 960px;
+}
+.recent .item {
+  text-align: center;
+  padding: 1em;
+}
+.recent .item .recent_post {
+  display: inline-block;
+  position: relative;
+  width: 23%;
+  margin-right: 2%;
+  background: #ffffff;
+  -webkit-filter: drop-shadow(0px 0px 4px 0.3px);
+  -moz-filter: drop-shadow(0px 0px 4px 0.3px);
+  -ms-filter: drop-shadow(0px 0px 4px 0.3px);
+  filter: drop-shadow(0px 0px 4px 0.3px);
+  min-height: 45rem;
+  height: auto;
+  vertical-align: top;
+}
+.recent .item .recent_post h3,
+.recent .item .recent_post div {
+  padding: 0.5em 1em;
+}
+.recent .item .recent_post h3 {
+  font-size: 1.7em;
+  line-height: 1em;
+  font-family: "Open Sans", "Trebuchet MS", Calibri, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.625;
+  color: #323232;
+  min-height: 50px;
+}
+.recent .item .recent_post .date {
+  border-top: 1px #323232 solid;
+  border-bottom: 1px #323232 solid;
+  margin: 0.5em 1em;
+  color: #0e2180;
+  font-size: 0.9em;
+}
+.recent .item .recent_post .excerpt {
+  color: #1a1a1a;
+  font-size: 0.9em;
+  line-height: 1.6em;
+  text-align: left;
+}
+.recent .item .recent_post .overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(87, 149, 246, 0.7);
+  text-align: center;
+}
+.recent .item .recent_post .overlay .bug {
+  font-size: 0.8em;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  color: #0e2180;
+  background-color: #ffffff;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 100%;
+  padding: 1.5rem 1rem;
+  line-height: 1.2;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+}
+.recent .item .recent_post.last-child {
+  margin-right: 0;
+}
+.recent .item .recent_post:hover {
+  text-decoration: none;
+}
+.recent .item .recent_post:hover .overlay {
+  display: block;
+}
+.carousel-control {
+  background: none repeat scroll 0 0 #222222;
+  border: 3px solid #ffffff;
+  border-radius: 100%;
+  color: #ffffff;
+  font-size: 4rem;
+  font-weight: 100;
+  height: 4rem;
+  left: 1.5rem;
+  line-height: 2.4rem;
+  margin-top: -2rem;
+  opacity: 0.5;
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  width: 4rem;
+}
+.carousel-control.right {
+  left: auto;
+  right: 15px;
 }
 .site-footer #footer-info img {
   height: 50px;

@@ -35,7 +35,7 @@ add_filter('genesis_breadcrumb_args', 'msdlab_breadcrumb_args'); //customize the
 remove_action('genesis_before_loop', 'genesis_do_breadcrumbs'); //move the breadcrumbs 
 add_filter( 'genesis_post_info', 'sp_post_info_filter' );
 add_action('genesis_before_content_sidebar_wrap', 'genesis_do_breadcrumbs'); //to outside of the loop area
-add_action('genesis_entry_content','msd_post_image',9);//add the image above the entry
+//add_action('genesis_entry_content','msd_post_image',9);//add the image above the entry
 
 add_filter('excerpt_more', 'sp_read_more_link');
 add_filter( 'the_content_more_link', 'sp_read_more_link' );
@@ -46,9 +46,11 @@ remove_action( 'genesis_after_post_content', 'genesis_post_meta' ); //remove the
 remove_action( 'genesis_entry_footer', 'genesis_post_meta'); //remove the meta (filed under, tags, etc.)
 //add_action( 'msdlab_title_area', 'msdlab_do_post_subtitle' );
 
-add_action( 'genesis_before_post', 'msdlab_post_image', 8 ); //add feature image across top of content on *pages*.
+add_action( 'genesis_entry_header', 'msdlab_post_image', 8 ); //add feature image across top of content on *pages*.
 add_filter( 'genesis_next_link_text', 'msdlab_older_link_text', 20);
 add_filter( 'genesis_prev_link_text', 'msdlab_newer_link_text', 20);
+
+add_action( 'genesis_after_endwhile', 'msdlab_do_recent_posts' );
 /*** FOOTER ***/
 add_theme_support( 'genesis-footer-widgets', 1 ); //adds automatic footer widgets//add the menu
 
