@@ -68,12 +68,12 @@ if (!class_exists('MSDRecentPosts')) {
                 if($i!=0 && $i%3==0){$post_list.= '</div><div class="item">';}
                 $i++;
                 $excerpt = $item->post_excerpt?$item->post_excerpt:msdlab_get_excerpt($item->ID,30);
-                $post_list .= '<div href="'.get_permalink($item->ID).'" class="recent_post">
+                $post_list .= '<div class="recent_post">
                     '.get_the_post_thumbnail($item->ID,'slider-thumb').'
                     <h3>'.$item->post_title.'</h3>
                     <div class="date">'.date('F j, Y',strtotime($item->post_date)).'</div>
                     <div class="excerpt">'.$excerpt.'</div>
-                    <div class="overlay"><div class="bug">Read This</div></div>
+                    <a class="overlay" href="'.get_permalink($item->ID).'"><div class="bug">Read This</div></a>
                 </div>';
              }
             
