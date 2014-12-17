@@ -13,7 +13,7 @@ if (!class_exists('MSDRecentPosts')) {
          * PHP 5 Constructor
          */
         function __construct(){
-            add_image_size('slider-thumb',260,145,TRUE);
+            add_image_size('slider-thumb',260,260,TRUE);
             //Actions
             add_action('init', array(&$this,'register_scripts_and_styles'));
             add_action('wp_enqueue_scripts', array(&$this,'add_scripts_and_styles') );
