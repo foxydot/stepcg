@@ -50,6 +50,7 @@ add_action( 'genesis_entry_header', 'msdlab_post_image', 8 ); //add feature imag
 add_filter( 'genesis_next_link_text', 'msdlab_older_link_text', 20);
 add_filter( 'genesis_prev_link_text', 'msdlab_newer_link_text', 20);
 
+remove_action( 'genesis_after_endwhile', 'genesis_posts_nav' );
 add_action( 'genesis_after_endwhile', 'msdlab_do_recent_posts' );
 /*** FOOTER ***/
 add_theme_support( 'genesis-footer-widgets', 1 ); //adds automatic footer widgets//add the menu
