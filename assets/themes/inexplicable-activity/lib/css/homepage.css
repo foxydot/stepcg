@@ -1,0 +1,121 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+/* Import Fonts
+------------------------------------------------------------ */
+/* Font Stacks */
+.customsansserif,
+.customsanserif {
+  font-family: "Open Sans", "Trebuchet MS", Calibri, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.625;
+}
+.fontawesome {
+  font-family: FontAwesome;
+}
+/* Colors */
+/* Neutrals */
+/* Buttons */
+.button:hover,
+.button:active,
+.button a,
+.button a:hover,
+.button a:active {
+  background-color: #fa8924;
+  border-radius: 3px;
+  padding: 16px 50px;
+  font-family: "Open Sans", "Trebuchet MS", Calibri, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.625;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: uppercase;
+  display: table;
+  margin: 14px auto;
+  letter-spacing: 4px;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  color: #fa8924;
+  background-color: transparent;
+  border: 1px solid #fa8924;
+}
+.light-blue-color {
+  color: #5795f6;
+}
+.red-bkg {
+  background: #930c10;
+}
+.orange-bkg {
+  background: #fa8924;
+}
+.white-bkg {
+  background: #ffffff;
+}
+.gradient {
+  background: linear-gradient(to right, #d31820 0%, #550000 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+  color: #ffffff;
+}
+.wrap {
+  margin: 0 auto;
+  max-width: 960px;
+}
+/* Clears */
+.clearfix {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.home .site-inner main.content article .entry-content {
+  margin-top: 0;
+}
+.home .site-inner main.content article .entry-content .gradient {
+  padding: 40px 0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+  text-transform: none;
+  width: 100%;
+}
+.home .site-inner main.content article .entry-content .gradient img.pull-right {
+  margin-left: 60px;
+}
+.home .site-inner main.content article .entry-content .orange-line-fixed {
+  height: 2px;
+  width: 100%;
+}
+.home .site-inner main.content article .entry-content .orange-gradient {
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZhODkyNCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZhODkyNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmYTg5MjQiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(left, rgba(250, 137, 36, 0) 0%, #fa8924 50%, rgba(250, 137, 36, 0) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(250, 137, 36, 0)), color-stop(50%, #fa8924), color-stop(100%, rgba(250, 137, 36, 0)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, rgba(250, 137, 36, 0) 0%, #fa8924 50%, rgba(250, 137, 36, 0) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, rgba(250, 137, 36, 0) 0%, #fa8924 50%, rgba(250, 137, 36, 0) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, rgba(250, 137, 36, 0) 0%, #fa8924 50%, rgba(250, 137, 36, 0) 100%);
+  /* IE10+ */
+  background: linear-gradient(to right, rgba(250, 137, 36, 0) 0%, #fa8924 50%, rgba(250, 137, 36, 0) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00fa8924', endColorstr='#00fa8924', GradientType=1);
+  /* IE6-8 */
+}
+.home .site-inner main.content article .entry-content .gradient-holder {
+  position: relative;
+  top: -124px;
+}
+.home .site-inner main.content article .entry-content .gradient-holder .odd {
+  position: relative;
+  top: 50px;
+}
