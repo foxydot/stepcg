@@ -180,7 +180,7 @@ if(!class_exists('WPAlchemy_MediaAccess')){
     include_once (WP_CONTENT_DIR.'/wpalchemy/MediaAccess.php');
 }
 $wpalchemy_media_access = new WPAlchemy_MediaAccess();
-add_action('init','add_homepage_metaboxes');
+//add_action('init','add_homepage_metaboxes');
 add_action('admin_footer','homepage_footer_hook');
 //add_action( 'admin_print_scripts', 'homepage_metabox_styles' );
 

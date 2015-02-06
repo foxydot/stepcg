@@ -34,7 +34,7 @@ function msdlab_add_styles() {
 }
 
 function msdlab_add_scripts() {
-    global $is_IE;
+    global $is_IE, $post;
     if(!is_admin()){
         //use cdn
             wp_enqueue_script('bootstrap-jquery','//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js',array('jquery'));
